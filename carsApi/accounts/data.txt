@@ -1,0 +1,18 @@
+{
+    "first_name": "Akol",
+    "last_name": "Oscar",
+    "email": "oscarekireh@gmail.com",
+    "password": "Testing1234#",
+    "confirm_password": "Testing1234#" 
+}
+
+{
+
+    "email": "oscarekireh@gmail.com",
+    "password": "Testing1234#"
+
+}
+
+deactivate
+source venv/bin/activate
+python3 -m venv venv
