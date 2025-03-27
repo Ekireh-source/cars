@@ -4,7 +4,7 @@
 *.pyc
 __pycache__
 *.pyo
-
+.DS_Store
 media
 
 # Backup files # 
