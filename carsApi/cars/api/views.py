@@ -73,8 +73,10 @@ class CarsView(APIView):
     
 
 class BidView(APIView):
+    
     permission_classes = [IsAuthenticated]
     serializer_class = BidSerializer
+
     def post(self, request, car_id):
         user = request.user
         car = get_object_or_404(Car, id=car_id)

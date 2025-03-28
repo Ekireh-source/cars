@@ -28,7 +28,7 @@ class CreateUserSerializer(serializers.ModelSerializer):
             )
         ],
     )
-   
+    user_role = serializers.CharField(required=True)
     password = serializers.CharField(
         validators=[validate_password], required=True
     )
@@ -42,6 +42,7 @@ class CreateUserSerializer(serializers.ModelSerializer):
             "email",
             "password",
             "confirm_password",
+            "user_role"
             
         ]
 

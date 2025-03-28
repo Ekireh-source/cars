@@ -5,6 +5,7 @@ import Company from "./company";
 import { getUserConfig } from "@/lib/account";
 import { User } from "@/interface/user.interface";
 import { useEffect, useState } from "react";
+import AuctionPage from "./customer";
 
 export default function Dashboard() {
     const [user, setUser] = useState<User | null>(null);  
@@ -31,7 +32,8 @@ export default function Dashboard() {
 
     return (
         <div>
-            {user?.user_role === "CUSTOMER" && <Company />}
+            {user?.user_role === "COMPANY" && <Company />}
+            {user?.user_role === "CUSTOMER" && <AuctionPage />}
             
             
         </div>
